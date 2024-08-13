@@ -1,0 +1,123 @@
+.payment-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.pay-box {
+    margin-top: 146px;
+    margin-left: 8px;
+    width: 440px;
+    height: 338px;
+    margin-bottom: 90px;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.pay-text {
+    font-family: "Poppins", sans-serif;
+    margin-top: 37px;
+    font-size: 26px;
+    font-weight: 600;
+    margin-left: 60px;
+    margin-bottom: 30px;
+}
+
+.input-container {
+    width: 276px;
+    position: relative;
+    margin-left: 62px;
+}
+
+.pay-input {
+    margin-top: 15px;
+    border: none;
+    border-bottom: 2px solid rgb(238, 135, 8);
+    outline: none;
+    width: 82%;
+    padding: 10px 5px;
+    font-size: 18px;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center;
+    transition: border-color 0.3s;
+    margin-left: 37px;
+}
+
+.pay-input::placeholder {
+    color: #999;
+}
+
+.pay-input:focus {
+    border-bottom: 2px solid rgb(51, 30, 240);
+}
+
+.pay-btn {
+    font-size: 17px;
+    margin-top: 58px;
+    width: 308px;
+    height: 40px;
+    margin-left: 62px;
+    background-color: rgb(244, 136, 28);
+    border-radius: 10px;
+    border: #e2dddd;
+}
+
+.pay-btn:hover {
+    background-color: rgb(249, 147, 44);
+    color: #ffffff;
+}
+
+hr.blue-line {
+    border: 0;
+    height: 2px;
+    background-color: rgb(255, 170, 0);
+    width: 362px;
+    margin-left: -26px;
+}
+
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+    .pay-box {
+        width: 148%;
+        margin-top: 247px;
+        height: auto;
+        padding: 19px;
+        margin-left: -68px;
+    }
+    
+
+    .pay-text {
+        font-size: 20px;
+        margin-left: -5px;
+    }
+
+    .input-container {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .pay-input {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .pay-btn {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    hr.blue-line {
+        width: 100%;
+        margin-left: 0;
+    }
+}
